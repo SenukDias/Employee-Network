@@ -1,0 +1,15 @@
+ol {
+	padding-left: 10px;
+}
+ol li{
+	list-style: decimal;
+	padding: 3px 0;
+}
+ol li ul li {
+	list-style: none;
+	padding-left: 25px;
+	padding-bottom: 0;
+}
+.color, h4 {
+	color: #ed5f5e;
+}

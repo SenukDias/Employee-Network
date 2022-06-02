@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mr Nike - Edit Data </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700'>
+    <link rel="stylesheet" href="./Style.css">
+
+</head>
+<body>
+
+    <div>
+        <h1 style="color:aliceblue">Edit Data</h1>
+    </div>
+
+    <!--Javascript Table-->
+    <div id="divshow" style="color:aliceblue; backdrop-filter:hue-rotate()"></div>
+
+    <!-- Form -->
+    <form action='' class='form'>
+        <div id="divEmployee" class="form">
+
+            
+            <!--Name-->
+            <div class='field required'>
+                <input type="hidden" name="Id" id="Id" datasourceitem="Id" />
+                <label class='label required' for='name'>Full name</label>
+                <input class='text-input' id='Name' name='Name' datasourceitem="Name" required type='text'>
+            </div>
+            <!--Login_Name-->
+            <div class='field half required error'>
+                <label class='label' for='login'>Login</label>
+                <input class='text-input' id='Username' name='Username' datasourceitem="Login" required type='text'>
+            </div>
+            <!--Phone-->
+            <div class='field half'>
+                <label class='label' for='phone'>Phone</label>
+                <input class='text-input' id='Phone' name='Phone' datasourceitem="Mobile" type='text'>
+            </div>
+            <!--Email-->
+            <div class='field required half'>
+                <label class='label' for='email'>E-mail</label>
+                <input class='text-input' id='Email' name='Email' datasourceitem="Email" required type='email'>
+            </div>
+            <!--Password-->
+            <div class='field half required'>
+                <label class='label' for='password'>Password</label>
+                <input class='text-input' id='Password' name='Password' datasourceitem="Password" required type='password'>
+            </div>
+
+            <!--Gender-->
+            <div class='field' id="Gender">
+                <label class='label'>Gender</label>
+                <div class='options'>
+                    <div class='option'>
+                        <input class='option-input' id='Male' name='Gender' type='radio' datasourceitem="Gender" value="Male">
+                        <label class='option-label' for='Male'>Male</label>
+                    </div>
+                    <div class='option'>
+                        <input class='option-input' id='Female' name='Gender' type='radio' datasourceitem="Gender" value="Female">
+                        <label class='option-label' for='Female'>Female</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Sports
+    <div class='field'>
+        <label class='label'>Sport?</label>
+        <ul class='checkboxes'>
+            <li class='checkbox'>
+                <input class='checkbox-input' id='choice-0' name='choice' type='checkbox' value='0'>
+                <label class='checkbox-label' for='choice-0'>Football</label>
+            </li>
+            <li class='checkbox'>
+                <input class='checkbox-input' id='choice-1' name='choice' type='checkbox' value='1'>
+                <label class='checkbox-label' for='choice-1'>Basketball</label>
+            </li>
+            <li class='checkbox'>
+                <input class='checkbox-input' id='choice-2' name='choice' type='checkbox' value='2'>
+                <label class='checkbox-label' for='choice-2'>Volleyball</label>
+            </li>
+            <li class='checkbox'>
+                <input class='checkbox-input' id='choice-3' name='choice' type='checkbox' value='3'>
+                <label class='checkbox-label' for='choice-3'>Golf</label>
+            </li>
+            <li class='checkbox'>
+                <input class='checkbox-input' id='choice-4' name='choice' type='checkbox' value='4'>
+                <label class='checkbox-label' for='choice-4'>Swimming</label>
+            </li>
+        </ul>
+    </div> -->
+            <!--Framework-->
+            <div class='field'>
+                <label class='label'>Favourite JS framework</label>
+                <ul class='options'>
+                    <li class='option'>
+                        <input class='option-input' id='React' name='Framework' type='radio' datasourceitem="Framework" value='React'>
+                        <label class='option-label' for='React'>React</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='Vue' name='Framework' type='radio' datasourceitem="Framework" value='Vue'>
+                        <label class='option-label' for='Vue'>Vue</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='Angular' name='Framework' type='radio' datasourceitem="Framework" value='Angular'>
+                        <label class='option-label' for='Angular'>Angular</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='Riot' name='Framework' type='radio' datasourceitem="Framework" value='Riot'>
+                        <label class='option-label' for='Riot'>Riot</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='Polymer' name='Framework' type='radio' datasourceitem="Framework" value='Polymer'>
+                        <label class='option-label' for='Polymer'>Polymer</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='Ember' name='Framework' type='radio' datasourceitem="Framework" value='Ember'>
+                        <label class='option-label' for='Ember-5'>Ember</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='Meteor' name='Framework' type='radio' datasourceitem="Framework" value='Meteor'>
+                        <label class='option-label' for='Meteor'>Meteor</label>
+                    </li>
+                    <li class='option'>
+                        <input class='option-input' id='ehsUICompliance' name='Framework' type='radio' datasourceitem="Framework" value='ehsUICompliance'>
+                        <label class='option-label' for='ehsUICompliance'>ehsUICompliance</label>
+                    </li>
+                </ul>
+            </div>
+
+            <!--About-->
+            <div class='field'>
+                <label class='label' for='about'>About</label>
+                <textarea class='textarea' cols='50' id='About' datasourceitem="Description" name='About' rows='3'></textarea>
+            </div>
+
+            <!--Position-->
+            <div class='field half'>
+                <label class='label' for='select'>Position</label>
+                <select class='select' name="Position" id='Position' datasourceitem="Position">
+                    <option selected value='' disabled></option>
+                    <option value='CEO'>CEO</option>
+                    <option value='Front_end'>Front-end developer</option>
+                    <option value='Back_end'>Back-end developer</option>
+                </select>
+            </div>
+            <div class='field half'>
+
+                <button type="button" class="button" onclick="btnUpdate_Click()">Update Data</button>
+            </div>
+        </div>
+    </form>
+    <!-- partial -->
+    <script src='jQuary.js?v=1.5'></script>
+    <script src='ehsUICompliance.js?v=1.5'></script>
+    <script src='Edit_Data.js?v=1.5'></script>
+</body>
+</html>

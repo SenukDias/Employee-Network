@@ -1,0 +1,31 @@
+/*
+ * Tabs
+ */
+.nav-tabs{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;	
+	border: none;
+	
+	li{
+    	padding: 0 3px;
+    	a {
+        	padding: 6px 20px 5px;
+        	text-decoration: none;
+        	background-color: @light-background;
+        	color: @dark-color;     	
+        	border-radius: 0;
+        	&:hover {
+            	
+            }
+        }
+        &.active a, &.active a:hover, &.active a:focus {
+        	background: @theme-color;
+        	color: @white-color;
+        	cursor: default;
+        }
+    }
+}

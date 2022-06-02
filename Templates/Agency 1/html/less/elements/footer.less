@@ -1,0 +1,60 @@
+.site-footer {
+    background-color: darken(@dark-color,10%);
+    padding: 20px 0px;
+    
+    .copyright {
+        color: lighten(@dark-color,30%);
+        margin: auto;
+        margin-top: 15px;
+        a {
+            color: lighten(@dark-color,40%);
+            &:hover {
+                color: @theme-color;
+            }
+        }
+    	
+    }
+    
+    .social-icon {
+        padding: 5px 0px;
+        a {
+            i {
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                color: lighten(@dark-color,40%);
+                transition: all .3s ease-in-out;
+            }
+            &:hover i {
+                background-color: @theme-color;
+                color: @white-color;
+            }
+        }
+    }
+    
+}
+
+
+//Responsive
+
+@media screen and (max-width: 768px) {
+
+    .site-footer {
+
+        .pull-right {float:none !important;}
+
+        .copyright {
+            display:block;
+            width: 100%;
+            padding-bottom: 15px;
+        }
+
+        .social-icon {
+            display:block;
+            width: 100%;
+        }
+
+    }
+
+}

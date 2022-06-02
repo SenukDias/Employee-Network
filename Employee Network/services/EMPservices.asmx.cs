@@ -25,5 +25,64 @@ namespace Employee_Network.services
             new DBAccess().AddData(member);
             return "Data Entered";
         }
+
+        [WebMethod]
+        public string SndMsg(Message message)
+        {
+            new DBAccess().AddMessage(message);
+            return "Data Entered";
+        }
+
+        [WebMethod]
+        public Members Data_GetAll()
+        {
+            return new DBAccess().GetMembers();
+        }
+
+        [WebMethod]
+        public Member GetByid(Member member)
+        {
+            return new DBAccess().GetByid(member);
+        }
+
+        [WebMethod]
+        public string UpdateData(Member member)
+        {
+            new DBAccess().DataUpdate(member);
+            return "Data Updated";
+        }
+
+        [WebMethod]
+        public string DeleteData(Member member)
+        {
+            new DBAccess().DataDelete(member);
+            return "Data Deleted";
+        }
+
+        [WebMethod]
+        public Members PayData()
+        {
+            return new DBAccess().GetMembers();
+        }
+
+        [WebMethod]
+        public string PayUser(Member member)
+        {
+            new DBAccess().AddPayment(member);
+            return "Data Entered";
+        }
+
+        [WebMethod]
+        public Payments GetPayment()
+        {
+            return new DBAccess().GetPayment();
+        }
+
+        [WebMethod]
+        public string ClrSalary(Payment payment)
+        {
+            new DBAccess().ClrSalary(payment);
+            return "Data Deleted";
+        }
     }
 }

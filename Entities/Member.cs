@@ -9,7 +9,11 @@ namespace Entities
     public class Member
     {
         #region Id
-        public string Id { get; set; }
+        public Int32 Id { get; set; }
+        #endregion
+
+        #region No
+        public Int32 No { get; set; }
         #endregion
 
         #region Name
@@ -47,5 +51,18 @@ namespace Entities
         #region Description
         public string Description { get; set; }
         #endregion
+
+        #region Month
+        public string Month { get; set; }
+        #endregion
+
+        #region Salary
+        public string Salary { get; set; }
+        #endregion
+    }
+
+    public class Members : List<Member>
+    {
+
     }
 }

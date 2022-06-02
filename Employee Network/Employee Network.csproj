@@ -67,15 +67,111 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="Sal.js" />
+    <Content Include="Admin.html" />
+    <Content Include="bin\DBConnection.dll" />
+    <Content Include="bin\DBConnection.pdb" />
+    <Content Include="bin\Employee Network.dll" />
+    <Content Include="bin\Employee Network.pdb" />
+    <Content Include="bin\Entities.dll" />
+    <Content Include="bin\Entities.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Net.Http.dll" />
+    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="blog.html" />
+    <Content Include="contact.html" />
+    <Content Include="css\style.min.css" />
+    <Content Include="Edit_Data.html" />
+    <Content Include="Edit_Data.js" />
     <Content Include="ehsUICompliance.js" />
     <Content Include="Employee.js" />
+    <Content Include="img\app-profile-mockup.png" />
+    <Content Include="img\bg-white.jpg" />
+    <Content Include="img\icons\bg.jpg" />
+    <Content Include="img\blog-1.jpg" />
+    <Content Include="img\blog-2.jpg" />
+    <Content Include="img\blog-3.jpg" />
+    <Content Include="img\blog-4.jpg" />
+    <Content Include="img\client.png" />
+    <Content Include="img\favicon-32x32.png" />
+    <Content Include="img\icons\animat-checkmark.gif" />
+    <Content Include="img\icons\animat-customize.gif" />
+    <Content Include="img\icons\animat-responsive.gif" />
+    <Content Include="img\obj_triangle.png" />
+    <Content Include="img\photo-1.jpg" />
+    <Content Include="img\photo-2.jpg" />
+    <Content Include="img\photo-4.jpg" />
+    <Content Include="img\photo-6.jpg" />
+    <Content Include="img\photo-7.jpg" />
+    <Content Include="img\photo-9.jpg" />
+    <Content Include="img\testi-1.jpg" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\app.min.js" />
+    <Content Include="Main_pg.js" />
+    <Content Include="obj\Debug\Employee Network.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Employee Network.dll" />
+    <Content Include="obj\Debug\Employee Network.pdb" />
     <Content Include="services\EMPservices.asmx" />
     <Content Include="Sign_up.html" />
     <Content Include="jQuary.js" />
-    <Content Include="style.css" />
+    <Content Include="Style.css" />
+    <Content Include="vendor\bootstrap\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\popper.min.js" />
+    <Content Include="vendor\countTo\jquery.countTo.js" />
+    <Content Include="vendor\isotope\isotope.min.js" />
+    <Content Include="vendor\lightcase\lightcase.css" />
+    <Content Include="vendor\lightcase\lightcase.js" />
+    <Content Include="vendor\owlcarousel\owl.carousel.min.css" />
+    <Content Include="vendor\owlcarousel\owl.carousel.min.js" />
+    <Content Include="vendor\select2\select2.min.css" />
+    <Content Include="vendor\select2\select2.min.js" />
+    <Content Include="vendor\stellar\jquery.stellar.js" />
+    <Content Include="vendor\waypoints\waypoint.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\EMPservices.asmx.cs">
       <DependentUpon>EMPservices.asmx</DependentUpon>
@@ -83,6 +179,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Employee Network.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\Employee Network.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\Employee Network.csproj.CopyComplete" />
+    <Content Include="obj\Debug\Employee Network.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -100,6 +211,9 @@
       <Project>{2b744037-1e9b-40b9-8b7b-beda971e2be6}</Project>
       <Name>Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

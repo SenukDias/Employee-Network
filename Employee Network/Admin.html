@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700'>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div>
+        <h1 style="color:antiquewhite"><center>Admin Panel</center></h1>
+    </div>
+
+    <!--Javascript Table-->
+    <div id="divPayShow" style="color:aliceblue; backdrop-filter:hue-rotate(); position:center; "></div>
+
+    <!-- Form -->
+    <form action='' class='form'>
+        <div id="divEmpSalary" class="form">
+
+
+            <!--Name-->
+            <div class='field required'>
+                <input type="hidden" name="Id" id="Id" datasourceitem="Id" />
+                <label class='label required' for='name'>Full name</label>
+                <input class='text-input' id='Name' name='Name' datasourceitem="Name" readonly>
+            </div>
+            <!--Login_Name-->
+            <div class='field half required error'>
+                <label class='label' for='login'>Login</label>
+                <input class='text-input' id='Username' name='Username' datasourceitem="Login" readonly>
+            </div>
+            <!--Phone-->
+            <div class='field half'>
+                <label class='label' for='phone'>Phone</label>
+                <input class='text-input' id='Phone' name='Phone' datasourceitem="Mobile" type='text' readonly>
+            </div>
+            <!--Email-->
+            <div class='field required half'>
+                <label class='label' for='email'>E-mail</label>
+                <input class='text-input' id='Email' name='Email' datasourceitem="Email" readonly>
+            </div>
+
+            <!--Gender-->
+            <div class='field' id="Gender">
+                <div class='field half required'>
+                    <label class='label'>Gender</label>
+                    <input class='text-input' id='Gender' name='Gender' datasourceitem="Gender" readonly>
+                </div>
+            </div>
+
+
+            <!--Framework-->
+            <div class='field'>
+                <label class='label'>JS framework</label>
+                <input class='text-input' id='Framework' name='Framework' datasourceitem="Framework" readonly>
+            </div>
+
+
+            <!--Position-->
+            <div class='field half'>
+                <label class='label' for='Position'>Position</label>
+                <input class='text-input' id='Position' name='Position' datasourceitem="Position" readonly>
+            </div>
+
+            <!--Month-->
+            <div class='field half'>
+                <label class='label' for='select'>Month</label>
+                <select class='select' name="Month" id='Month' datasourceitem="Month">
+                    <option selected value='Choose Month for Pay' disabled></option>
+                    <option value='January'>January</option>
+                    <option value='February'>February</option>
+                    <option value='March'>March</option>
+                    <option value='April'>April</option>
+                    <option value='May'>May</option>
+                    <option value='June'>June</option>
+                    <option value='July'>July</option>
+                    <option value='August'>August</option>
+                    <option value='September'>September</option>
+                    <option value='October'>October</option>
+                    <option value='November'>November</option>
+                    <option value='December'>December</option>
+                </select>
+            </div>
+
+            <!--Salary-->
+            <div class='field half'>
+                <label class='label' for='Salary'>Salary</label>
+                <input class='text-input' id='Salary' name='Salary' datasourceitem="Salary" type='text'>
+            </div>
+
+            <div class='field half'>
+
+                <button type="button" class="button" onclick="btnPay_Click()">Pay Here</button><br>
+                <button type="reset" class="button" onclick="">Reset Data</button>
+            </div>
+        </div>
+    </form>
+
+    <!--Javascript Table-->
+    <div id="DivPayRec" style="color:aliceblue; backdrop-filter:hue-rotate(); "></div>
+
+    <!-- Javascript -->
+    <script src='jQuary.js?v=1.5'></script>
+    <script src='ehsUICompliance.js?v=1.5'></script>
+    <script src='Sal.js?v=1.5'></script>
+</body>
+</html>

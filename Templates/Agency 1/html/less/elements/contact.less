@@ -1,0 +1,114 @@
+//Form
+.contact-form{
+	padding-top: 10px;
+
+	.error {
+	    font-size: 11px;
+	    color: #ff0000;
+	    letter-spacing:1px;
+		display: none;
+	}
+	#ajaxsuccess {
+		background: darken(@white-color, 4%);
+		padding: 10px 15px; 
+		color:#28a745;
+		display: none;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	&-item{
+		margin-bottom: 20px;
+		
+		input[type="text"], input[type="password"], textarea{
+		    background: darken(@white-color, 4%);
+			border: none;
+			color: @black-color;
+			font-size: 0.9em;
+			width: 100%;
+			padding: 10px 15px;
+			&:focus{
+                outline: none;
+            }
+		}
+		
+		textarea{
+			height: 160px;
+		}
+		
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color: darken(@white-color, 30%);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color: darken(@white-color, 30%);
+		    opacity:  1;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color: darken(@white-color, 30%);
+		    opacity:  1;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: darken(@white-color, 30%);
+		}
+		
+		
+		
+	}
+	
+	&-button{
+		margin-bottom: 0;
+	}
+	
+}
+
+.contact-form-dark {
+
+	.contact-form-item {
+		input[type="text"], input[type="password"], textarea{
+		    background: lighten(@dark-color, 10%);
+			color: @white-color;
+		}
+	}
+}
+
+//Information
+.contact-info{
+    padding-left: 30px;
+    
+    &-icon{
+        float: left;
+        background-color: @theme-color;
+        color: @white-color;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        margin-right: 18px;
+    }
+    
+    &-title{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    
+    &-text{
+        font-size: 0.9em;
+        padding-top: 5px;
+		padding-left: 58px;
+    }
+
+}
+
+
+//Responsive
+
+@media screen and (max-width: 768px) {
+    
+    .contact-info {
+	    padding-left: 0px;
+	}
+
+}
